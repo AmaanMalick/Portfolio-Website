@@ -24,7 +24,7 @@ function App() {
     <div className={`app ${darkMode ? "dark" : ""}`}>
       {/* Navbar */}
       <nav className="navbar">
-        <div className="logo">Amaan's Portfolio</div>
+        <div className="logo">Amaan Portfolio</div>
         <div className={`nav-links ${menuOpen ? "open" : ""}`}>
           <a href="#home">Home</a>
           <a href="#about">About Us</a>
