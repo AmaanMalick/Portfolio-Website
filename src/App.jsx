@@ -1,7 +1,13 @@
 import TypingEffect from "./TypingEffect";
 import { Github, ExternalLink } from "lucide-react";
 import React, { useState, useEffect } from "react";
+import PicDarkMode from './assets/PicDarkMode.png';
+import PicLightMode from './assets/PicLightMode.png';
 import "./App.css";
+
+
+
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -74,15 +80,11 @@ function App() {
                 </div>
 
                 <div className="home-image">
-                  <img
-                    src={
-                      darkMode
-                        ? "/src/assets/PicDarkMode.png"
-                        : "/src/assets/PicLightMode.png"
-                    }
-                    alt="Profile"
-                    className="profile-image"
-                  />
+                <img
+  src={darkMode ? PicDarkMode : PicLightMode}
+  alt="Profile"
+  className="profile-image"
+/>
                 </div>
               </div>
             </div>
